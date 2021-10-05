@@ -73,7 +73,7 @@
         height: 80px;
         background-color: rgba( 10, 10, 10, 0.8);
     }
-    
+        /* section button */
     .btn {
         background-color: transparent;
         color: #fff;
@@ -87,6 +87,13 @@
 
     .btn:hover {
         transform: scale(1);
+    }
+    
+        /* section libraries */
+    #libraries a {
+        font-size: .7rem;
+        font-weight: 600;
+        padding: 7px 1px;
     }
     
 
