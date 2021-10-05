@@ -38,6 +38,10 @@ header {
     margin: 10px 0 20px 15px;
 }
 
+#logo-small img {
+    display: none;
+}
+
 #app-nav a {
     color: #B4B3B3;
     text-decoration: none;
