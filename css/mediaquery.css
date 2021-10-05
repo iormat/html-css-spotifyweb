@@ -66,4 +66,28 @@
     main {
         width: calc(100% - 70px);
     }
+
+    #main-btn {
+        left: 70px;
+        width: calc(100% - 70px);
+        height: 80px;
+        background-color: rgba( 10, 10, 10, 0.8);
+    }
+    
+    .btn {
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 50px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        float: right;
+        margin: 15px 30px 0 0;
+        transform: scale(.8);
+    }
+
+    .btn:hover {
+        transform: scale(1);
+    }
+    
+
 }

@@ -127,18 +127,42 @@ div.logo-profile {
 /* MAIN */
 main {
     width: calc(100% - 200px);
-    height:calc(100vh - 80px);
-    overflow-y: scroll;
+    height:calc(100vh - 160px);
     float: left;
+    position: relative;
     /* debug */
-    background-color: cornflowerblue;
+    background-color: #151921;
+}
+#scroll-cont {
+    padding-top: 80px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 80px);
 }
 
     /* section button */
 #main-btn {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
     height: 80px;
-    /* debug */
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba( 10, 10, 10, 0.8);
+}
+
+.btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    float: right;
+    margin: 15px 30px 0 0;
+}
+
+.btn:hover {
+    animation: .4s linear;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
     /* section libraries */
