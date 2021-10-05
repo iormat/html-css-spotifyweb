@@ -1,4 +1,4 @@
-/* general rules */
+/* GENERAL RULES */
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +9,70 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+
+.flex-container {
+    display: flex;
+}
+
+/* HEADER */
+header {
+    width: 250px;
+    /* debug */
+    height:calc(100vh - 130px);
+    background-color: brown;
+}
+
+/* MAIN */
+main {
+    width: calc(100% - 250px);
+    height:calc(100vh - 130px);
+    overflow-y: scroll;
+    /* debug */
+    background-color: cornflowerblue;
+}
+
+    /* section button */
+#main-btn {
+    height: 80px;
+    /* debug */
+    background-color: rgba(0, 0, 0, .8);
+}
+
+    /* section libraries */
+#libraries {
+    width: 70%;
+    margin: 0 auto;
+    /* debug */
+    height: 50px;
+    background-color: sandybrown;
+}
+
+    /* section recently played */
+#recent {
+    /* debug */
+    height: 200px;
+    background-color: silver;
+}
+
+    /* section made-for */
+#made-for {
+    /* debug */
+    height: 200px;
+    background-color: springgreen;
+}
+
+    /* section popular */
+#popular {
+    /* debug */
+    height: 200px;
+    background-color: tomato;
+}
+
+/* FOOTER */
+footer {
+    height: 130px;
+    /* debug */
+    background-color: violet;
+}
+
+
