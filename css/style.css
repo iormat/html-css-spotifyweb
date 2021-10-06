@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     overflow: hidden;
+    background-color: #151921;
 }
 
 .float-container:after {
@@ -23,9 +24,9 @@ header {
     background-color: #000;
     height:calc(100vh - 80px);
     font-weight: 600;
-    position: relative;
     float: left;
 }
+
 #logo-full {
     background-color: #000;
     position: relative;
@@ -45,7 +46,7 @@ header {
 #app-nav a, #libraries a {
     color: #B4B3B3;
     text-decoration: none;
-    padding:7px 0 7px 15px;
+    padding:5px 0 5px 15px;
     border-left: 3px solid transparent;
     font-size: .8rem;
     display: inline-block;
@@ -84,8 +85,8 @@ header {
 }
 
 .list-container {
-    max-height: 320px;
-    overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 200px;
 }
 
 #profile {
@@ -94,9 +95,15 @@ header {
     font-size: .6rem;
     width: 200px;
     padding: 10px;
-    position: fixed;
-    bottom: 80px;
 }
+
+.flex {
+    height: calc(67vh - 80px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
 
 #profile img{
     width: 20px;
@@ -136,7 +143,7 @@ main {
 }
 #scroll-cont {
     padding-top: 80px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     max-height: calc(100vh - 80px);
 }
 
@@ -176,6 +183,7 @@ main {
 #libraries li {
     display: inline-block;
     text-decoration: none;
+    text-align: center;
 }
 
 #libraries li div {
@@ -191,17 +199,96 @@ main {
 }
 
     /* section recently played */
-#recent {
-    /* debug */
-    height: 200px;
-    background-color: silver;
+.center {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#recent .flex {
+    flex-flow: row wrap;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.album {
+    text-align: center;
+    color: white;
+    max-width: calc(100% / 6);
+    padding: 15px;
+    min-width: 180px;
+}
+
+.cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+}
+
+.cover.heavy {
+    background-image: url('../img/metal_lifting.jpg');
+}
+
+.cover.strange {
+    background-image: url('../img/stranger.jpeg');
+}
+
+.cover.quiet {
+    background-image: url('../img/aquietplace.jpeg');
+}
+
+.cover.split {
+    background-image: url('../img/split.jpeg');
+}
+
+.cover.cure {
+    background-image: url('../img/cure.jpeg');
+}
+
+.cover.sinister {
+    background-image: url('../img/sinister.jpeg');
+}
+
+.cover:hover .play-hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.fa-play-circle {
+    line-height: 180px;
+    font-size: 50px;
+    visibility: hidden;
+}
+
+.cover:hover .fa-play-circle {
+    visibility: visible;
+}
+
+.album:hover {
+    cursor: pointer;
+}
+
+.album h5 {
+    font-size: .8rem;
+}
+
+.album span {
+    font-size: .7rem;
+    color: #7C7D81;
 }
 
     /* section made-for */
 #made-for {
     /* debug */
     height: 200px;
-    background-color: springgreen;
+    /* background-color: springgreen; */
 }
 
     /* section popular */

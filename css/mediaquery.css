@@ -1,6 +1,6 @@
 /* SMALL MOBILE VIEW */
-@media screen and (max-width: 500px) {
-    /* header */
+@media screen and (max-width: 520px) {
+    /* HEADER */
     header {
         width: 70px;
     }
@@ -40,17 +40,13 @@
         display: none;
     }
 
-    nav #profile {
-        width: 70px;
+    .flex {
+        height: calc(67vh - 200px);
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: flex-end;
     }
-
-    #profile>div {
-        width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-    }
-
+    
     #profile img {
         width: 30px;
         height: 30px;
@@ -62,7 +58,7 @@
         height: 40px;
     }
 
-    /* main */
+    /* MAIN */
     main {
         width: calc(100% - 70px);
     }
@@ -73,6 +69,7 @@
         height: 80px;
         background-color: rgba( 10, 10, 10, 0.8);
     }
+
         /* section button */
     .btn {
         background-color: transparent;
@@ -82,11 +79,11 @@
         border: 2px solid #fff;
         float: right;
         margin: 15px 30px 0 0;
-        transform: scale(.8);
+        transform: scale(.7);
     }
 
     .btn:hover {
-        transform: scale(1);
+        transform: scale(.9);
     }
     
         /* section libraries */
