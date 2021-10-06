@@ -98,12 +98,11 @@ header {
 }
 
 .flex {
-    height: calc(67vh - 80px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    height: calc(67vh - 80px);
 }
-
 
 #profile img{
     width: 20px;
@@ -135,7 +134,7 @@ div.logo-profile {
 /* MAIN */
 main {
     width: calc(100% - 200px);
-    height:calc(100vh - 160px);
+    height:calc(100vh - 80px);
     float: left;
     position: relative;
     /* debug */
@@ -143,8 +142,8 @@ main {
 }
 #scroll-cont {
     padding-top: 80px;
-    /* overflow-y: scroll; */
-    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
+    height: 100%;
 }
 
     /* section button */
@@ -204,12 +203,6 @@ main {
     margin: 0 auto;
 }
 
-#recent .flex {
-    flex-flow: row wrap;
-    overflow: auto;
-    overflow-x: hidden;
-}
-
 section h2 {
     color: #fff;
     font-size: 1.8rem;
@@ -218,9 +211,11 @@ section h2 {
 }
 
 .album {
+    display: inline-block;
+    vertical-align:top;
     text-align: center;
     color: white;
-    max-width: calc(100% / 6);
+    max-width: calc(100% / 6 - 7px);
     padding: 15px;
     min-width: 180px;
 }
@@ -276,6 +271,7 @@ section h2 {
 }
 
 .album h5 {
+    margin-top: 15px;
     font-size: .8rem;
 }
 
@@ -285,10 +281,12 @@ section h2 {
 }
 
     /* section made-for */
-#made-for {
-    /* debug */
-    height: 200px;
-    /* background-color: springgreen; */
+.cover.realise {
+    background-image: url('../img/radar.jpeg');
+}
+
+.cover.daily {
+    background-image: url('../img/mixdaily.jpeg');
 }
 
     /* section popular */

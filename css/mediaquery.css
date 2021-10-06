@@ -40,7 +40,7 @@
         display: none;
     }
 
-    .flex {
+    nav .flex {
         height: calc(67vh - 200px);
         flex-flow: row nowrap;
         justify-content: center;
