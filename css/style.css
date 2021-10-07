@@ -135,9 +135,8 @@ main {
     height:calc(100vh - 80px);
     float: left;
     position: relative;
-    /* debug */
-    background-color: #151921;
 }
+
 #scroll-cont {
     padding-top: 80px;
     overflow-y: scroll;
@@ -152,6 +151,7 @@ main {
     width: calc(100% - 200px);
     height: 80px;
     background-color: rgba( 10, 10, 10, 0.7);
+    z-index: 2;
 }
 
 .btn {
@@ -201,66 +201,50 @@ main {
     margin: 0 auto;
 }
 
-section h2 {
+#recent, #made-for, #popular {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+h2 {
+    display: block;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-section .subtitle {
+.subtitle {
     font-size: 1rem;
     color: #7C7D81;
 }
 
 .album {
-    display: inline-block;
-    vertical-align:top;
     text-align: center;
     color: white;
-    max-width: calc(100% / 6 - 7px);
+    width: calc(100% / 6);
     padding: 15px 15px 15px 0;
-    min-width: 180px;
-    margin: 50px 0;
+    min-width: 140px;
+    margin: 50px 0 20px 0;
 }
 
 .cover {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 180px;
-    height: 180px;
+    position: relative;
 }
 
-.cover.heavy {
-    background-image: url('../img/metal_lifting.jpg');
+.cover img {
+    width: 100%;
 }
 
-.cover.strange {
-    background-image: url('../img/stranger.jpeg');
-}
-
-.cover.quiet {
-    background-image: url('../img/aquietplace.jpeg');
-}
-
-.cover.split {
-    background-image: url('../img/split.jpeg');
-}
-
-.cover.cure {
-    background-image: url('../img/cure.jpeg');
-}
-
-.cover.sinister {
-    background-image: url('../img/sinister.jpeg');
-}
-
-.cover:hover .play-hover{
-    background-color: rgba(0, 0, 0, 0.7);
+.cover:hover img {
+    filter: brightness(.5);
 }
 
 .album .fa-play-circle {
-    line-height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 50px;
     visibility: hidden;
 }
@@ -283,28 +267,10 @@ section .subtitle {
     color: #7C7D81;
 }
 
-    /* section made-for */
-.cover.realise {
-    background-image: url('../img/radar.jpeg');
-}
-
-.cover.daily {
-    background-image: url('../img/mixdaily.jpeg');
-}
-
     /* section popular */
-.cover.round {
+.cover.round img{
     border-radius: 50%;
     overflow: hidden;
-}
-
-.cover.youg {
-    background-image: url('../img/youg.jpeg');
-  
-}
-
-.cover.einaudi {
-    background-image: url('../img/einaudi.jpeg');
 }
 
 /* FOOTER */
@@ -319,7 +285,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* debug */
 }
 
     /* left side */
@@ -370,7 +335,7 @@ footer {
     margin-right: 8px;
 }
 
-#foot-left i:hover{
+#foot-left i:hover {
     color: #fff;
     cursor: pointer;
 }
@@ -380,7 +345,7 @@ footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    min-width: 280px;
+    min-width: 250px;
     width: 50%;
 }
 

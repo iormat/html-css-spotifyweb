@@ -94,16 +94,84 @@
         padding: 7px 1px;
     }
 
-        /* section recentcently played */
+        /* section recently played */
     .center {
         width: 90%;
         margin: 0 auto;
     }
 
+    #recent, #made-for, #popular {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }    
+
     .album {
-        min-width: 130px;
-        max-width: calc(100% / 2 - 10px);
-        margin: 20px 0;
+        min-width: 140px;
+        max-width: calc(100% / 2);
+    }
+
+    .cover {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* FOOTER */
+        /* left section */
+    #foot-left {
+        min-width: 110px;
+    }
+
+    #foot-left img {
+        display: none;
+    }   
+    
+    /* right section */
+    #foot-right {
+        min-width: 110px;
+    }
+
+    #foot-right .dxicons i{
+        font-size: .8rem;
+        margin: 3px;
+    }
+
+}
+
+/* SMALL MOBILE LANDSCAPE VIEW */
+@media screen and (max-width: 536px) {
+
+    #recent, #made-for, #popular {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }    
+
+    .album {
+        min-width: 160px;
+        max-width: calc(100% / 2);
+    }
+
+    .cover {
+        width: 130px;
+        height: 130px;
+    }
+    
+}
+
+/* TABLET VIEW */
+@media screen and (max-width: 1087px) {
+
+    #recent, #made-for, #popular {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }    
+
+    .album {
+        min-width: 150px;
+        max-width: calc(100% / 4);
+        padding: 7px 7px 7px 0;
     }
 
     .cover {
@@ -113,15 +181,5 @@
         width: 130px;
         height: 130px;
     }
-    /* FOOTER */
     
-        /* left section */
-    #foot-left {
-        min-width: 110px;
-    }
-
-    #foot-left img {
-        display: none;
-    }    
-
 }
