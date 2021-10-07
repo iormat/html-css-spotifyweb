@@ -113,6 +113,15 @@
         width: 130px;
         height: 130px;
     }
+    /* FOOTER */
     
+        /* left section */
+    #foot-left {
+        min-width: 110px;
+    }
+
+    #foot-left img {
+        display: none;
+    }    
 
 }

@@ -27,7 +27,7 @@
                 <!-- qui vanno le voci relative alla navigazione dell'app -->
                 <ul class="general">
                     <li>
-                        <a href="#">
+                        <a href="#" class="current">
                             <img src="img/home.svg" alt="home">
                             <span> Home </span>
                         </a>
@@ -144,7 +144,7 @@
                 <nav id="libraries">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#" class="current">
                                 IN EVIDENZA
                                 <div></div>
                             </a>
@@ -278,7 +278,7 @@
                     <!-- sezione artisti popolari -->
                     <section id="popular">
                         <div>
-                            <h2> Creato per John Doe </h2>
+                            <h2> Artisti pi&ugrave; popolari </h2>
                             <span class="subtitle"> Pi&ugrave; ascolti&#44; pi&ugrave; accurati saranno i suggerimenti</span>
                         </div>
 
@@ -305,7 +305,56 @@
         </main>
     </div>
     <!-- sezione player -->
-    <footer>
+    <footer> 
+        <section id="foot-left">
+            <div class="playing">
+                <div class="on-air">
+                    <img src="img/sinister.jpeg" alt="sinister album">
+                    <div class="on-title">
+                        <h2> Sinister </h2>
+                        <span class="subtitle"> Brano nome </span>
+                    </div>
+                </div>
+    
+                <div class="like">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>    
+            </div>
+        </section>  
+
+        <section id="foot-center">
+            <div class="player-icons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="audio-player">
+                <div class="current"> 0&colon;25 </div>
+
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="length"> 4&colon;35 </div>                
+            </div>
+        </section>
+
+        <section id="foot-right">
+            <div class="dxicons">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+            </div>
+
+            <div class="audio-player">
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </section>   
 
     </footer>
 </body>
