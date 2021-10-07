@@ -23,8 +23,10 @@ header {
     width: 200px;
     background-color: #000;
     height:calc(100vh - 80px);
+    min-height: 350px;
     font-weight: 600;
     float: left;
+    position: relative;
 }
 
 #logo-full {
@@ -95,6 +97,9 @@ header {
     font-size: .6rem;
     width: 200px;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .flex {
@@ -134,7 +139,7 @@ div.logo-profile {
 /* MAIN */
 main {
     width: calc(100% - 200px);
-    height:calc(100vh - 80px);
+    height:calc(100vh);
     float: left;
     position: relative;
     /* debug */
@@ -313,6 +318,8 @@ section .subtitle {
 
 /* FOOTER */
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: #282828;
     position: fixed;
     height: 80px;
