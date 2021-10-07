@@ -139,7 +139,7 @@ div.logo-profile {
 /* MAIN */
 main {
     width: calc(100% - 200px);
-    height:calc(100vh);
+    height:calc(100vh - 80px);
     float: left;
     position: relative;
     /* debug */
@@ -300,11 +300,9 @@ section .subtitle {
 }
 
     /* section popular */
-#popular {
-}
-
 .cover.round {
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .cover.youg {
