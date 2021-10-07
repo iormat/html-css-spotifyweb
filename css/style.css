@@ -31,8 +31,6 @@ header {
 
 #logo-full {
     background-color: #000;
-    position: relative;
-    z-index:2;
 }
 
 #logo-full img{
@@ -106,6 +104,12 @@ header {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+}
+
+#profile > div a {
+    font-size: .6rem;
+    padding: 0;
+    width: inherit;
 }
 
 #profile hr {
@@ -285,6 +289,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
 }
 
     /* left side */
@@ -340,7 +345,7 @@ footer {
     cursor: pointer;
 }
 
-    /* middle part */
+    /* footer center part */
 #foot-center {
     display: flex;
     flex-flow: column nowrap;
@@ -348,7 +353,6 @@ footer {
     min-width: 250px;
     width: 50%;
 }
-
 
 #foot-center .player-icons, #foot-right .dxicons {
     display: flex;
@@ -394,6 +398,28 @@ footer {
     width: 30%;
     background-color: #C2C1C2;
     border-radius: 10px;
+    position: relative;
+}
+
+#foot-center .player-slider {
+    position: absolute;
+    left: 90%;
+    bottom: -7px;
+    background-color: #C2C1C2;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: none;
+}
+
+#foot-center .timeline:hover .player-slider,
+#foot-right .timeline:hover .player-slider {
+    display: block;
+}
+
+#foot-center .timeline:hover .progress,
+#foot-right .timeline:hover .progress {
+    background-color: #CDF47B;
 }
 
     /* right section */
@@ -410,4 +436,15 @@ footer {
 
 #foot-right .audio-player {
     margin-right: 5px;
+}
+
+#foot-right .player-slider {
+    position: absolute;
+    left: 90%;
+    bottom: -3px;
+    background-color: #C2C1C2;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: none;
 }
