@@ -30,6 +30,12 @@
         width: calc(100% / 4);
     }
 
+    /* foot-right section */
+    #foot-right .dxicons i{
+        margin: 5px;
+    }
+    
+
 }
 
 /* SMALL MOBILE LANDSCAPE VIEW */

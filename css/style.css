@@ -187,7 +187,7 @@ main {
     text-align: center;
 }
 
-#libraries li div {
+#libraries li .highlight {
     width: 50%;
     padding: 10px 0 0 0;
     margin: 0 auto;
@@ -195,7 +195,7 @@ main {
     visibility: hidden;
 }
 
-#libraries a:focus div{
+#libraries a:focus .highlight{
     visibility: visible;
 }
 
@@ -240,7 +240,7 @@ h2 {
     width: 100%;
 }
 
-.cover:hover img {
+.album:hover img {
     filter: brightness(.5);
 }
 
@@ -253,7 +253,7 @@ h2 {
     visibility: hidden;
 }
 
-.cover:hover .fa-play-circle {
+.album:hover .fa-play-circle {
     visibility: visible;
 }
 
